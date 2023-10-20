@@ -80,7 +80,7 @@
 }
 .ex-10-icon {
     font-size: 60px;
-    animation: cerchioAnimato 2s linear infinite;
+    animation: cerchioAnimato 0.5s linear infinite;
 }
 @keyframes cerchioAnimato {
     0% {
@@ -96,7 +96,7 @@
     
 }
 .ex-11-icon:hover {
-    animation: cerchioScatto 2s;
+    animation: cerchioScatto 3s;
 }
 @keyframes cerchioScatto {
     0% {
@@ -127,6 +127,34 @@
     width: 60px;
     height: 20px;
 }
+.ex-12-button:hover .ex-12-top-white {
+    animation: left_move 1s ease-in-out;
+}
+@keyframes left_move {
+    0%{
+        left: 10%;
+    }
+    60%{
+        left: calc(100% - 80px);
+    }
+    100% {
+        left: 40;
+    }
+}
+.ex-12-button:hover .ex-12-bottom-white {
+    animation: right_move 1s ease-in;
+}
+@keyframes right_move {
+    0% {
+        right: 20%;
+    }
+    60% {
+        right: calc(100% - 80px);
+    }
+    100% {
+        right: 20%;
+    }
+}
 .ex-12-bottom-white, .ex-13-bottom-white {
     position: absolute;
     bottom: -10px;
@@ -135,3 +163,4 @@
     width: 60px;
     height: 20px;
 }
+
