@@ -93,6 +93,18 @@
 
 .ex-11-icon {
     font-size: 60px;
+    
+}
+.ex-11-icon:hover {
+    animation: cerchioScatto 2s;
+}
+@keyframes cerchioScatto {
+    0% {
+        transform: rotate(0deg);
+    }
+    80% {
+        transform: rotate(310deg);
+    }
 }
 .ex-12-button, .ex-13-button {
     position: relative;
